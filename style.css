@@ -58,6 +58,36 @@ p, h1, h2, h3, h4, h5, h6 {
 
 /* Main CSS */
 
+/* Fonts & Variables */
+
+@font-face {
+  font-family: 'Fjord';
+  src: url('./assets/fonts/fjordone-regular-webfont.woff') format("woff"),
+  url('./assets/fonts/fjordone-regular-webfont.woff2') format("woff2"),
+  url('./assets/fonts/FjordOne-Regular.ttf') format("ttf");
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('./assets/fonts/lato-regular-webfont.woff') format("woff"),
+  url('./assets/fonts/lato-regular-webfont.woff2') format("woff2"),
+  url('./assets/fonts/Lato-Regular.ttf') format("ttf");
+}
+:root {
+  --heroFontFamily: 'Fjord';
+  --mainFontFamily: 'Lato';
+  --heroFontSize: 2.25rem;
+  --heroFontWeight: 700;
+  --primaryColour: #40FFD1;
+  --secondaryColour: #00A2FE;
+  --bannerText: #FFFFFF;
+}
+
+body {
+  background-color: #f0f0f0;
+  font-family: var(--mainFontFamily), serif;
+}
+
 /* Header */
 
 header {
@@ -90,14 +120,66 @@ nav {
 /* Hero Image */
 
 .hero {
-  background-image: url("./images/pexels-karolina-grabowska-4498577.jpg");
+  background-image: url("./assets/images/pexels-karolina-grabowska-4498577.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-color: rgba(1, 1, 1, 0.5);
-  background-blend-mode: multiply;
+  background-color: rgba(70, 70, 70, 0.9);
+  background-blend-mode: hue;
 }
 
 .heroText {
-  color: #40FFD1;
+  padding: 1.25rem;
+  color: var(--primaryColour);
+  text-transform: uppercase;
+  font-family: var(--heroFontFamily), serif;
+  font-size: var(--heroFontSize);
+  font-weight: 700;
+  line-height: 2.225rem;
 }
+
+/* Text Section */
+
+.textSection {
+  padding-inline: 1.25rem;
+  padding-block: 0.75rem;
+}
+
+/* Link Bar */
+
+.linkBar {
+  background-color: var(--secondaryColour);
+  color: var(--bannerText);
+  display: flex;
+  align-items: center;
+  padding: 1.25rem;
+}
+
+.linkBar h2 {
+  font-weight: 400;
+}
+
+.linkBar button {
+  border-radius: 100vh;
+  background-color: var(--primaryColour);
+  font-size: 1rem;
+  border: none;
+  flex-shrink: 0;
+  padding: 1rem;
+  height: 50%;
+}
+
+/* Break Image */
+
+.breakImage {
+  background-image: url("./assets/images/pexels-yan-krukau-8613313.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 200px;
+  background-color: rgba(70, 70, 70, 0.5);
+  background-blend-mode: hue;
+}
+
+/* Client Reviews */
+
