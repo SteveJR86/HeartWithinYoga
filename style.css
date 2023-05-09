@@ -88,11 +88,18 @@ body {
   font-family: var(--mainFontFamily), serif;
 }
 
+/* General Styling */
+
+.sectionHeading {
+  text-transform: capitalize;
+}
+
 /* Header */
 
 header {
   display: flex;
   align-items: center;
+  padding: 1rem;
 }
 
 .logoDiv {
@@ -136,6 +143,7 @@ nav {
   font-size: var(--heroFontSize);
   font-weight: 700;
   line-height: 2.225rem;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 /* Text Section */
@@ -143,6 +151,11 @@ nav {
 .textSection {
   padding-inline: 1.25rem;
   padding-block: 0.75rem;
+}
+
+.bigParagraph {
+  padding-block: 1.125rem;
+  font-size: 1.25rem;
 }
 
 /* Link Bar */
@@ -167,6 +180,7 @@ nav {
   flex-shrink: 0;
   padding: 1rem;
   height: 50%;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 /* Break Image */
@@ -183,3 +197,24 @@ nav {
 
 /* Client Reviews */
 
+.reviews {
+  padding: 1rem;
+}
+
+.review {
+  padding: 1rem;
+  margin-block: 1rem;
+  background: linear-gradient(135deg, var(--primaryColour), var(--secondaryColour));
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.reviewText::before, .reviewText::after {
+  content: '"';
+}
+
+.reviewName {
+  font-size: 1.125rem;
+  font-style: italic;
+}
