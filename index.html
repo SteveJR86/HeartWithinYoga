@@ -93,11 +93,12 @@
       </figure>
       <figure class="review">
         <blockquote class="reviewText">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto dolore optio laudantium 
-          porro esse odit expedita tenetur dolor rerum ullam minima dolores voluptate quisquam reiciendis 
-          quasi unde nobis, deleniti fugiat.
+          Heart with yoga was a wonderfully beneficial class for the students with complex additional
+          needs. It grounded them, helping them to be present in the moment and bring self awareness to
+          their own physical form. It was one of the few lessons where all the students would engage
+          together as a group and it helped support their mobility and wellbeing.  I highly recommend!
         </blockquote>
-        <figcaption class="reviewName">Client Name</figcaption>
+        <figcaption class="reviewName">Helena Adelina</figcaption>
       </figure>
     </div>
     <div class="linkBar">
@@ -106,27 +107,31 @@
     </div>
     <div class="contactForm">
       <h2 class="sectionHeading">Get in touch</h2>
-      <form>
+      <form class="form" action="https://api.web3forms.com/submit" method="post" id="form">
+        <input type="hidden" name="access_key" value="9abd3290-4896-4e90-a98b-9fac87ed69b8" />
+        <input type="hidden" name="subject" value="New Submission from Web3Forms" />
+        <input type="hidden" name="redirect" value="https://web3forms.com/success" />
+        <input type="checkbox" name="botcheck" id="" style="display: none;" />
         <label for="name">Name:</label>
         <input id="name" type="text" name="name">
         <label for="email">Email:</label>
         <input id="email" type="email" name="email">
-        <label for="name">Phone:</label>
-        <input id="name" type="text" name="name">
+        <label for="phone">Phone:</label>
+        <input id="phone" type="text" name="phone">
         <label for="message">Message:</label>
         <textarea id="message" name="message" rows="8" cols="25"></textarea>
-        <input type="submit" value="Submit">
+        <input type="submit" value="Submit" class="submitBtn">
       </form>
     </div>
   </main>
   <footer>
-    <p>Heart within yoga</p>
+    <p class="sectionHeading">Heart within yoga</p>
     <div class="socialIcons">
-      <a href="https://www.facebook.com/edytaannazachara"><i class="fa fa-facebook fa-2xl"></i></a>
-      <a href="https://instagram.com/heart_within_yoga?igshid=ZDdkNTZiNTM="><i class="fa fa-instagram fa-2xl"></i></a>
-      <a href="https://twitter.com/EdyZachara?t=fqFV-kCqguJiPTfueVRiKw&s=03"><i class="fa fa-twitter fa-2xl"></i></a>
+      <a href="https://www.facebook.com/edytaannazachara"><i class="socialLinks fa fa-facebook fa-2xl"></i></a>
+      <a href="https://instagram.com/heart_within_yoga?igshid=ZDdkNTZiNTM="><i class="socialLinks fa fa-instagram fa-2xl"></i></a>
+      <a href="https://twitter.com/EdyZachara?t=fqFV-kCqguJiPTfueVRiKw&s=03"><i class="socialLinks fa fa-twitter fa-2xl"></i></a>
     </div>
-    <p>Website created by <a href="#">Steve Riley Webdesigns</a></p>
+    <p class="credit">Website created by <a href="#">Steve Riley Webdesigns</a></p>
   </footer>
 </body>
 </html>

@@ -73,6 +73,14 @@ p, h1, h2, h3, h4, h5, h6 {
   url('./assets/fonts/lato-regular-webfont.woff2') format("woff2"),
   url('./assets/fonts/Lato-Regular.ttf') format("ttf");
 }
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('./assets/fonts/raleway-variablefont_wght-webfont.woff') format("woff"),
+  url('./assets/fonts/raleway-variablefont_wght-webfont.woff2') format("woff2"),
+  url('./assets/fonts/raleway-variablefont_wght-webfont.ttf') format("ttf");
+}
+
 :root {
   --heroFontFamily: 'Fjord';
   --mainFontFamily: 'Lato';
@@ -92,6 +100,11 @@ body {
 
 .sectionHeading {
   text-transform: capitalize;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 /* Header */
@@ -217,4 +230,61 @@ nav {
 .reviewName {
   font-size: 1.125rem;
   font-style: italic;
+}
+
+/* Form Styling */
+
+.contactForm {
+  padding: 1rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.submitBtn {
+  border-radius: 100vh;
+  background-color: var(--primaryColour);
+  font-size: 1rem;
+  border: none;
+  flex-shrink: 0;
+  padding-block: 0.5rem;
+  padding-inline: 3rem;
+  height: 50%;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-block: 1rem;
+  margin-left: auto;
+}
+
+/* Footer */
+
+footer {
+  background-color: var(--secondaryColour);
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block: 1rem;
+}
+
+.socialIcons {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  padding: 0.5rem;
+}
+
+.socialLinks {
+  background-color: var(--primaryColour);
+  padding: 0.5rem;
+  border-radius: 50%;
+  height: 30px;
+  aspect-ratio: 1/1;
+  text-align: center;
+}
+
+.credit {
+  font-size: 0.875rem;
+  font-family: 'Raleway';
 }
