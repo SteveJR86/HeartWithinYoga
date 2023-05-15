@@ -18,7 +18,7 @@ jobs:
           KEY: ${{ secrets.SSHKEY }}
         with:
           source: "."
-          target: "/var/www/heartwithinyoga.co.uk"
+          target: "/var/www/heartwithinyoga.co.uk/html"
 
       - name: Executing remote command
         uses: appleboy/ssh-action@master
