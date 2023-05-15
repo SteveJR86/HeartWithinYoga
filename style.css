@@ -177,6 +177,8 @@ nav {
   background-color: var(--secondaryColour);
   color: var(--bannerText);
   display: flex;
+  gap: 1rem;
+  justify-content: space-evenly;
   align-items: center;
   padding: 1.25rem;
 }
