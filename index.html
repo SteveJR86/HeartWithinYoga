@@ -8,24 +8,27 @@
   <link rel="stylesheet" href="./style.css">
   <!-- remove font-awesome library and put individual svgs in before end -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="./script.js"></script>
+  <script src="./script.js" defer></script>
 </head>
 <body>
   <header>
     <div class="logoDiv">
-      <img src="./assets/images/logo.png" />
+      <img src="./assets/images/logo.png" alt="Heart Within Yoga company logo" />
     </div>
     <nav>
-      <button class="navBtn">
+      <button class="navBtn" onclick="openclosemenu()">
         <i class="fa fa-bars fa-2xl"></i>
       </button>
       <!-- come back and sort out menu later -->
-      <ul class="menu">
+      <ul class="menu menuHide" id="menu" onclick="openclosemenu()">
         <li><a href="#">Home</a></li>
-        <li><a href="#">What I offer</a></li>
-        <li><a href="#">About me</a></li>
-        <li><a href="#">Client reviews</a></li>
-        <li><a href="#">Get in touch</a></li>
+        <li><a href="#whatioffer">What I offer</a></li>
+        <li><a href="#aboutme">About me</a></li>
+        <li><a href="#reviews">Client reviews</a></li>
+        <ul>
+          <li><a href="./reviews.html">See more reviews</a></li>
+        </ul>
+        <li><a href="#getintouch">Get in touch</a></li>
       </ul>
     </nav>
   </header>
@@ -34,7 +37,7 @@
       <h1 class="heroText">Theraputic yoga for special needs</h1>
     </div>
     <div class="textSection">
-      <h2 class="sectionHeading">What I offer</h2>
+      <h2 class="sectionHeading" id="whatioffer">What I offer</h2>
       <p>
         Here at Heart Within Yoga, I believe yoga should be for everyone.
       </p>
@@ -55,10 +58,11 @@
     </div>
     <div class="linkBar">
       <h2>Want to know more?</h2>
-      <button>Get in touch</button>
+      <a href="#getintouch" class="linkBarBtn">Get in touch</a>
     </div>
     <div class="textSection">
-      <h2 class="sectionHeading">About me</h2>
+      <h2 class="sectionHeading" id="aboutme">About me</h2>
+      <img src="./assets/images/profilePic.webp" alt="profile photograph of Edy" class="profilePic"/>
       <p>
         My name is Edy, I’m a qualified yoga teacher offering Therapeutic Yoga for children and 
         young adults with special needs. I have years of experience working in Special Needs 
@@ -78,7 +82,7 @@
     </div>
     <div class="breakImage">
     </div>
-    <div class="reviews">
+    <div class="reviews" id="reviews">
       <h2 class="sectionHeading">Client reviews</h2>
       <figure class="review">
         <blockquote class="reviewText">
@@ -103,9 +107,9 @@
     </div>
     <div class="linkBar">
       <h2>Read more reviews</h2>
-      <button>Click here</button>
+      <a href="./reviews.html" class="linkBarBtn">Click here</a>
     </div>
-    <div class="contactForm">
+    <div class="contactForm" id="getintouch">
       <h2 class="sectionHeading">Get in touch</h2>
       <form class="form" action="https://api.web3forms.com/submit" method="post" id="form">
         <input type="hidden" name="access_key" value="9abd3290-4896-4e90-a98b-9fac87ed69b8" />
@@ -131,7 +135,7 @@
       <a href="https://instagram.com/heart_within_yoga?igshid=ZDdkNTZiNTM="><i class="socialLinks fa fa-instagram fa-2xl"></i></a>
       <a href="https://twitter.com/EdyZachara?t=fqFV-kCqguJiPTfueVRiKw&s=03"><i class="socialLinks fa fa-twitter fa-2xl"></i></a>
     </div>
-    <p class="credit">Website created by <a href="#">Steve Riley Webdesigns</a></p>
+    <p class="credit">Website created by <a class="srlink" href="mailto:steven.j.riley@gmail.com">Steve Riley Webdesigns</a></p>
   </footer>
 </body>
 </html>

@@ -92,6 +92,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 body {
+  /* overflow-x: hidden; */
   background-color: #f0f0f0;
   font-family: var(--mainFontFamily), serif;
 }
@@ -116,7 +117,7 @@ header {
 }
 
 .logoDiv {
-  width: 40%;
+  width: 120px;
 }
 
 /* Navbar */
@@ -134,7 +135,27 @@ nav {
 }
 
 .menu {
+  position: absolute;
+  right: 0;
+  top: 150px;
+  background-color: #f0f0f0;
+  z-index: 10;
+  list-style: none;
+  padding: 1rem;
+  font-size: 1.5rem;
+  width: 100%;
+}
+
+.menuHide {
   display: none;
+}
+
+.menuShow {
+  display: block;
+}
+
+.menu li {
+  border-bottom: solid 1px black;
 }
 
 /* Hero Image */
@@ -164,6 +185,8 @@ nav {
 .textSection {
   padding-inline: 1.25rem;
   padding-block: 0.75rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .bigParagraph {
@@ -187,7 +210,7 @@ nav {
   font-weight: 400;
 }
 
-.linkBar button {
+.linkBarBtn {
   border-radius: 100vh;
   background-color: var(--primaryColour);
   font-size: 1rem;
@@ -208,6 +231,13 @@ nav {
   min-height: 200px;
   background-color: rgba(70, 70, 70, 0.5);
   background-blend-mode: hue;
+}
+
+/* Profile Picture */
+
+.profilePic {
+  max-width: 75%;
+  align-self: center;
 }
 
 /* Client Reviews */
@@ -288,5 +318,9 @@ footer {
 
 .credit {
   font-size: 0.875rem;
+}
+
+.srlink {
   font-family: 'Raleway';
+  font-weight: 700;
 }
