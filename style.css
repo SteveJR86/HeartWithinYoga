@@ -91,9 +91,11 @@ p, h1, h2, h3, h4, h5, h6 {
   --bannerText: #FFFFFF;
 }
 
-body {
+html {
   overflow-x: hidden;
-  max-width: 99%;
+}
+
+body {
   background-color: #f0f0f0;
   font-family: var(--mainFontFamily), serif;
 }
