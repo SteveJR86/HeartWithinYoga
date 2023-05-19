@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heart Within Yoga</title>
+  <link rel="stylesheet" href="./style.css">
+  <!-- remove font-awesome library and put individual svgs in before end -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="logoDiv">
+      <img src="./assets/images/logo.png" alt="Heart Within Yoga company logo" />
+    </div>
+    <nav>
+      <button class="navBtn" onclick="openclosemenu()">
+        <img class="menuIcon" id="menuIcon" src="./assets/icons/bars-solid.svg" />
+      </button>
+      <!-- come back and sort out menu later -->
+      <ul class="menu menuHide" id="menu" onclick="openclosemenu()">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./reviews.html">Client reviews</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="reviews" id="reviews">
+      <h1 class="sectionHeading">Client reviews</h1>
+      <figure class="review">
+        <blockquote class="reviewText">
+          Edyta has been teaching Yoga for children with special needs in my classroom for two years.
+          We are working in a special school, so it is very important to have teachers like Edyta.
+          She is brilliant, calm, creative, positive and she is always supporting us with our more
+          challenging pupils through her yoga session. Thanks Edyta.
+        </blockquote>
+        <figcaption class="reviewName">Jorge Pérez</figcaption>
+      </figure>
+      <figure class="review">
+        <blockquote class="reviewText">
+          Edy helped Gracie during the various lockdowns with yoga classes. Every session was so personal and
+          well organised specifically for Gracie and her needs. The tools provided for each session and as a
+          takeaway from each lesson helped Gracie to focus so much better during such a difficult time. Edy was
+          also able to adapt to Gracies needs easily and every session was amazing fun!
+        </blockquote>
+        <figcaption class="reviewName">Charlotte Jarrett</figcaption>
+      </figure>
+      <figure class="review">
+        <blockquote class="reviewText">
+          My son, now 25, has severe learning difficulties, hemiplegia, and other mobility issues.
+          He can exhibit behaviours of distress. He has been having regular weekly yoga sessions with Edy
+          for 14 months now. He always looks forward to them, always makes sure he is ready, and is always 
+          calm and happy after the sessions. We have noticed that he is more able to stretch his body and 
+          limbs, and that his balance has improved. He also benefits hugely from the relaxation and 
+          meditation elements of the sessions. They have become an essential part of his week.
+        </blockquote>
+        <figcaption class="reviewName">Jane HvH</figcaption>
+      </figure>
+      <figure class="review">
+        <blockquote class="reviewText">
+          Heart with yoga was a wonderfully beneficial class for the students with complex additional
+          needs. It grounded them, helping them to be present in the moment and bring self awareness to
+          their own physical form. It was one of the few lessons where all the students would engage
+          together as a group and it helped support their mobility and wellbeing.  I highly recommend!
+        </blockquote>
+        <figcaption class="reviewName">Helena Adelina</figcaption>
+      </figure>
+    </div>
+  </main>
+  <footer>
+    <p class="sectionHeading">Heart within yoga</p>
+    <div class="socialIcons">
+      <a href="https://www.facebook.com/edytaannazachara"><img src="./assets/icons/facebook-f.svg" class="socialLinks"></a>
+      <a href="https://instagram.com/heart_within_yoga?igshid=ZDdkNTZiNTM="><img src="./assets/icons/instagram.svg" class="socialLinks"></a>
+      <a href="https://twitter.com/EdyZachara?t=fqFV-kCqguJiPTfueVRiKw&s=03"><img src="./assets/icons/twitter.svg" class="socialLinks"></a>
+    </div>
+    <p class="credit">Website created by <a class="srlink" href="mailto:steven.j.riley@gmail.com">Steve Riley Webdesigns</a></p>
+  </footer>
+</body>
+</html>

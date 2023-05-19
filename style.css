@@ -92,7 +92,6 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 body {
-  /* overflow-x: hidden; */
   background-color: #f0f0f0;
   font-family: var(--mainFontFamily), serif;
 }
@@ -129,9 +128,11 @@ nav {
 .navBtn {
   border: none;
   background: none;
-  transform: scale(3, 3);
-  position:relative;
-  right: 20px;
+}
+
+.menuIcon {
+  fill: black;
+  height: 60px;
 }
 
 .menu {
@@ -144,6 +145,10 @@ nav {
   padding: 1rem;
   font-size: 1.5rem;
   width: 100%;
+}
+
+.menu:last-child {
+  padding-bottom: 2rem;
 }
 
 .menuHide {
@@ -187,6 +192,7 @@ nav {
   padding-block: 0.75rem;
   display: flex;
   flex-direction: column;
+  margin: auto;
 }
 
 .bigParagraph {
@@ -238,12 +244,17 @@ nav {
 .profilePic {
   max-width: 75%;
   align-self: center;
+  border: black 5px solid;
+  border-radius: 50%;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 1rem;
 }
 
 /* Client Reviews */
 
 .reviews {
   padding: 1rem;
+  margin: auto;
 }
 
 .review {
@@ -268,6 +279,7 @@ nav {
 
 .contactForm {
   padding: 1rem;
+  margin: auto;
 }
 
 .form {
@@ -316,6 +328,10 @@ footer {
   text-align: center;
 }
 
+.socialLinks path {
+  fill: white;
+}
+
 .credit {
   font-size: 0.875rem;
 }
@@ -323,4 +339,35 @@ footer {
 .srlink {
   font-family: 'Raleway';
   font-weight: 700;
+}
+
+/* Media Queries */
+
+@media (min-width: 52rem) {
+  .menu {
+    position: initial;
+  }
+  
+  .menuHide, .menuShow {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .navBtn {
+    display: none;
+  }
+  
+  .hero {
+    height: 15rem;
+  }
+
+  .heroText {
+    font-size: 3rem;
+    line-height: 3rem;
+    width: 18ch;
+  }
+
+  .textSection, .reviews, .contactForm {
+    max-width: 80ch;
+  }
 }
