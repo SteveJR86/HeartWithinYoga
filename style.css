@@ -89,9 +89,9 @@ p, h1, h2, h3, h4, h5, h6 {
   --mainFontFamily: 'Lato';
   --heroFontSize: 2.25rem;
   --heroFontWeight: 700;
-  --primaryColour: #33d2ad;
-  --secondaryColour: #0072b4;
-  --bannerText: #FFFFFF;
+  --primaryColour: #40FFD1;
+  --secondaryColour: #00A2FE;
+  --bannerText: #000000;
 }
 
 body {
@@ -118,8 +118,9 @@ header {
   padding: 1rem;
 }
 
-.logoDiv {
+.logo {
   width: 120px;
+  height: auto;
 }
 
 /* Navbar */
@@ -136,6 +137,7 @@ nav {
 .menuIcon {
   fill: black;
   height: 60px;
+  width: auto;
 }
 
 .menu {
@@ -247,6 +249,7 @@ nav {
 
 .profilePic {
   max-width: 75%;
+  height: auto;
   align-self: center;
   border: black 5px solid;
   border-radius: 50%;
