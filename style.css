@@ -91,7 +91,7 @@ p, h1, h2, h3, h4, h5, h6 {
   --heroFontWeight: 700;
   --primaryColour: #40FFD1;
   --secondaryColour: #00A2FE;
-  --bannerText: #000000;
+  --bannerText: #ffffff;
 }
 
 body {
