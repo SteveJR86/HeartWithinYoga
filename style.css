@@ -237,6 +237,18 @@ nav {
   height: 50%;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
+/* Service Images */
+
+.serviceImages {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.serviceImages img {
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
 
 /* Break Image */
 
@@ -256,6 +268,8 @@ nav {
 .profilePic {
   max-width: 75%;
   height: auto;
+  aspect-ratio: 1;
+  object-fit: cover;
   align-self: center;
   border: black 5px solid;
   border-radius: 50%;
@@ -384,5 +398,15 @@ footer {
 
   .textSection, .reviews, .contactForm {
     max-width: 80ch;
+  }
+
+  .serviceImages {
+    flex-direction: row;
+  }
+
+  .serviceImages img {
+    width: 45%;
+    object-fit: cover;
+
   }
 }
