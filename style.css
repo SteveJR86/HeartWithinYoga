@@ -110,6 +110,11 @@ a {
   color: inherit;
 }
 
+h3 {
+  font-size: 1.25rem;
+  padding-block: 1rem;
+}
+
 /* Header */
 
 header {
@@ -241,6 +246,7 @@ nav {
 
 .serviceImages {
   display: flex;
+  flex: 1 1 0;
   flex-direction: column;
   gap: 1rem;
   margin-bottom: 1rem;
@@ -402,11 +408,13 @@ footer {
 
   .serviceImages {
     flex-direction: row;
+    /* max-width: 100%; */
   }
 
   .serviceImages img {
-    width: 45%;
+    /* width: 45%; */
     object-fit: cover;
+    min-height: 100%;
 
   }
 }
